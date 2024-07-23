@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: c7305a56085894bf9908c72ed1aa4e24
+timeCreated: 1520014437
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/ForegroundElements/ForegroundElements_13.asset
+  uploadId: 248221

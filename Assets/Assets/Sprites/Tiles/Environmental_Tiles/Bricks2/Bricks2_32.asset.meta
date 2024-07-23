@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 6e08a3579137e4e2eb955b8342c4f412
+timeCreated: 1520957625
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/Bricks2/Bricks2_32.asset
+  uploadId: 248221

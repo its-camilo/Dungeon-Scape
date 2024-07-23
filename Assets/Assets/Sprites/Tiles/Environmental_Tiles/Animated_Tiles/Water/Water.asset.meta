@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dee9f53fae5c34f43a675fb5ada3cc88
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/Animated_Tiles/Water/Water.asset
+  uploadId: 248221
