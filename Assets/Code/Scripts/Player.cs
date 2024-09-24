@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     private bool resetJump = false;
     private float speed = 2.5f;
-
+    private bool grounded = false;
     private PlayerAnimation playerAnim;
     private SpriteRenderer playerSprite;
 
@@ -27,12 +27,14 @@ public class Player : MonoBehaviour
     void Movement()
     {
         float move = Input.GetAxisRaw("Horizontal");
+        grounded = isGrounded();
         Flip(move);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded() is true)
         {
             rb2d.linearVelocity = new Vector2(rb2d.linearVelocityX, jumpForce);
             StartCoroutine(ResetJumpRoutine());
+            playerAnim.Jump(true);
         }
         
         rb2d.linearVelocity = new Vector2(move * speed, rb2d.linearVelocityY);
@@ -53,12 +55,13 @@ public class Player : MonoBehaviour
 
     bool isGrounded()
     {
-        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.down, .8f, groundLayer);
+        RaycastHit2D hitInfo = Physics2D.Raycast(transform.position, Vector2.down, 1f, groundLayer);
 
         if (hitInfo.collider != null)
         {
             if (!resetJump)
             {
+                playerAnim.Jump(false);
                 return true;
             }
         }
