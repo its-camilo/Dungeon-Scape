@@ -11,17 +11,24 @@ public class Player : MonoBehaviour
     private bool grounded = false;
     private PlayerAnimation playerAnim;
     private SpriteRenderer playerSprite;
+    private SpriteRenderer swordArcSprite;
 
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         playerAnim = GetComponent<PlayerAnimation>();
         playerSprite = GetComponentInChildren<SpriteRenderer>();
+        swordArcSprite = transform.GetChild(1).GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         Movement();
+
+        if (Input.GetMouseButtonDown(0) && isGrounded())
+        {
+            playerAnim.Attack();
+        }
     }
 
     void Movement()
@@ -46,10 +53,22 @@ public class Player : MonoBehaviour
         if (move > 0)
         {
             playerSprite.flipX = false;
+            swordArcSprite.flipX = false;
+            swordArcSprite.flipY = false;
+            
+            Vector3 newPos = swordArcSprite.transform.localPosition;
+            newPos.x = 1.01f;
+            swordArcSprite.transform.localPosition = newPos;
         }
         else if (move < 0)
         {
             playerSprite.flipX = true;
+            swordArcSprite.flipX = true;
+            swordArcSprite.flipY = true;
+            
+            Vector3 newPos = swordArcSprite.transform.localPosition;
+            newPos.x = -1.01f;
+            swordArcSprite.transform.localPosition = newPos;
         }
     }
 
