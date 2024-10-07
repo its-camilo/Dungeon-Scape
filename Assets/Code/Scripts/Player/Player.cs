@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IDamageable
 {
     private Rigidbody2D rb2d;
     private float jumpForce = 5f;
@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
     private PlayerAnimation playerAnim;
     private SpriteRenderer playerSprite;
     private SpriteRenderer swordArcSprite;
+    
+    public int Health { get; set; }
 
     void Start()
     {
@@ -93,5 +95,10 @@ public class Player : MonoBehaviour
         resetJump = true;
         yield return new WaitForSeconds(.1f);
         resetJump = false;
+    }
+    
+    public void Damage()
+    {
+        Debug.Log("Player - Damage()");
     }
 }

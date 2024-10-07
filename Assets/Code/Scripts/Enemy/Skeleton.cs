@@ -10,9 +10,27 @@ public class Skeleton : Enemy, IDamageable
         Health = base.health;
     }
     
+    public override void Movement()
+    {
+        base.Movement();
+        
+        float distance = Vector3.Distance(player.transform.localPosition, transform.localPosition);
+        
+        Vector3 direction = player.transform.localPosition - transform.localPosition;
+
+        if (direction.x > 0 && anim.GetBool("InCombat") == true)
+        {
+            sprite.flipX = false;
+        }
+
+        else if (direction.x < 0 && anim.GetBool("InCombat") == true)
+        {
+            sprite.flipX = true;
+        }
+    }
+    
     public void Damage()
     {
-        Debug.Log("Skeleton - Damage()");
         Health--;
         anim.SetTrigger("Hit");
         
