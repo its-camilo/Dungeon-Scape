@@ -904,6 +904,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Spider_Attack_31
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e18069ae6b27d46b93def15748eeb1
+      internalID: -1136403676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -943,6 +965,7 @@ TextureImporter:
       Spider_Attack_29: 21300058
       Spider_Attack_3: 21300006
       Spider_Attack_30: 21300060
+      Spider_Attack_31: -1136403676
       Spider_Attack_4: 21300008
       Spider_Attack_5: 21300010
       Spider_Attack_6: 21300012

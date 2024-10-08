@@ -18,12 +18,14 @@ public class Attack : MonoBehaviour
                 canDamage = false;
                 StartCoroutine(ResetDamage());
             }
+            
+            hit.Damage();
         }
     }
     
     IEnumerator ResetDamage()
     {
-        yield return new WaitForSeconds(0.0001f);
+        yield return new WaitForSeconds(0.000001f);
         canDamage = true;
     }
 }

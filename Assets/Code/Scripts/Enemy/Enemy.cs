@@ -10,6 +10,7 @@ public abstract class Enemy : MonoBehaviour
     protected Vector3 currentTarget;
     protected Animator anim;
     protected SpriteRenderer sprite;
+    protected bool isDead = false;
 
     protected bool isHit = false;
     protected Player player;
@@ -33,7 +34,10 @@ public abstract class Enemy : MonoBehaviour
             return;
         }
         
-        Movement();
+        if (!isDead)
+        {
+            Movement();
+        }
     }
 
     public virtual void Movement()
@@ -69,6 +73,18 @@ public abstract class Enemy : MonoBehaviour
         {
             isHit = false;
             anim.SetBool("InCombat", false);
+        }
+        
+        Vector3 direction = player.transform.localPosition - transform.localPosition;
+
+        if (direction.x > 0 && anim.GetBool("InCombat") == true)
+        {
+            sprite.flipX = false;
+        }
+
+        else if (direction.x < 0 && anim.GetBool("InCombat") == true)
+        {
+            sprite.flipX = true;
         }
     }
 }
