@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour, IDamageable
 {
+    public int diamonds;
+    
     private Rigidbody2D rb2d;
-    private float jumpForce = 5f;
+    private float jumpForce = 6.5f;
     [SerializeField] private LayerMask groundLayer;
     private bool resetJump = false;
     private float speed = 2.5f;
