@@ -26,6 +26,11 @@ public class UIManager : MonoBehaviour
     {
         playerGemCountText.text = gemCount.ToString() + "G";
     }
+    
+    public void UpdateShopSelection(int yPos)
+    {
+        selectionImage.rectTransform.anchoredPosition = new Vector2(selectionImage.rectTransform.anchoredPosition.x, yPos);
+    }
 
     private void Awake()
     {
