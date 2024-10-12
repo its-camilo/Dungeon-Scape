@@ -58,6 +58,11 @@ public class Shop : MonoBehaviour
     {
         if (player.diamonds >= currentItemCost)
         {
+            if (currentItem == 2)
+            {
+                GameManager.Instance.HasKeyToCastle = true;
+            }
+            
             player.diamonds -= currentItemCost;
             shopPanel.SetActive(false);
         }
