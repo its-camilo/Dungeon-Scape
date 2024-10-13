@@ -16,7 +16,7 @@ public class Attack : MonoBehaviour
             {
                 hit.Damage();
                 canDamage = false;
-                StartCoroutine(ResetDamage());
+                //StartCoroutine(ResetDamage());
             }
             
             hit.Damage();

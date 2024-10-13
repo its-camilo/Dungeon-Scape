@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour, IDamageable
 {
@@ -30,19 +31,25 @@ public class Player : MonoBehaviour, IDamageable
     {
         Movement();
 
-        if (Input.GetMouseButtonDown(0) && isGrounded())
+        if (CrossPlatformInputManager.GetButtonDown("A_Button") && isGrounded())
         {
             playerAnim.Attack();
         }
+        
+        /*if Input.GetMouseButtonDown(0) && isGrounded())
+        {
+            playerAnim.Attack();
+        }*/
     }
 
     void Movement()
     {
-        float move = Input.GetAxisRaw("Horizontal");
+        float move = CrossPlatformInputManager.GetAxis("Horizontal"); 
+        //float move = Input.GetAxisRaw("Horizontal");
         grounded = isGrounded();
         Flip(move);
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded() is true)
+        if ((Input.GetKeyDown(KeyCode.Space) || CrossPlatformInputManager.GetButtonDown("B_Button")) && isGrounded() is true)
         {
             rb2d.linearVelocity = new Vector2(rb2d.linearVelocityX, jumpForce);
             StartCoroutine(ResetJumpRoutine());
@@ -102,18 +109,23 @@ public class Player : MonoBehaviour, IDamageable
     
     public void Damage()
     {
-        Debug.Log("Player - Damage()");
+        if (Health < 1)
+        {
+            return;
+        }
+        
+        Health--;
+        UIManager.Instance.UpdateLives(Health);
+        
+        if (Health < 1)
+        {
+            playerAnim.Death();
+        }
     }
     
     public void AddGems(int amount)
     {
         diamonds += amount;
         UIManager.Instance.UpdateGemCount(diamonds);
-    }
-    
-    public void UpdateLives(int livesRemaining)
-    {
-        //Health = livesRemaining;
-        //UIManager.Instance.UpdateLives(Health);
     }
 }

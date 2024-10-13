@@ -1,0 +1,12 @@
+# ninja log v5
+259	1019	7505474048891019	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	dcbc3fd729625d47
+1022	1503	7505474053668210	C:/Users/camil/OneDrive/Documentos/GitHub/Dungeon Scape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b5ha5x1/obj/arm64-v8a/libswappywrapper.so	3906e7169caa1b60
+126	2423	7505474062855961	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	70d7b984aeddb3b
+185	2493	7505474063554210	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a8188bce7ef97c1f
+213	2499	7505474063641660	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	92dd2fab8fa2006e
+0	2506	7505474063666749	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3e3f2226cdd25a39
+194	2590	7505474064535186	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e9d2cb6d16192230
+86	2638	7505474065040787	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	17277a741137f4e8
+162	2790	7505474066517909	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	8b4706d4ced8a645
+94	2896	7505474067614504	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d7dacadea2a57c1e
+2896	3069	7505474069212207	C:/Users/camil/OneDrive/Documentos/GitHub/Dungeon Scape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b5ha5x1/obj/arm64-v8a/libgame.so	11e4058d8fa22f78
