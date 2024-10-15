@@ -173,7 +173,7 @@ PlayerSettings:
   overrideDefaultApplicationIdentifier: 1
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 23
-  AndroidTargetSdkVersion: 0
+  AndroidTargetSdkVersion: 34
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   stripEngineCode: 1
@@ -702,10 +702,10 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
-    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT;LEVELPLAY_DEPENDENCIES_INSTALLED
+    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT;LEVELPLAY_DEPENDENCIES_INSTALLED;BBG_UNITYADS;BBG_MT_ADS
     Standalone: CROSS_PLATFORM_INPUT
     Windows Store Apps: MOBILE_INPUT
-    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT;BBG_UNITYADS;BBG_MT_ADS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
