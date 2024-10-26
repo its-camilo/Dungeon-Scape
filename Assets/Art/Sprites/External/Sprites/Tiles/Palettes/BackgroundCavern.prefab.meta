@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1b55eda712d804033b2b86ac15c35c42
+timeCreated: 1519842820
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Palettes/BackgroundCavern.prefab
+  uploadId: 248221

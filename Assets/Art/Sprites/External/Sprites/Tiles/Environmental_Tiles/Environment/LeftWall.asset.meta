@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 737cad30eac69415cb14aff3c7b1a15f
+timeCreated: 1519841320
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/Environment/LeftWall.asset
+  uploadId: 248221

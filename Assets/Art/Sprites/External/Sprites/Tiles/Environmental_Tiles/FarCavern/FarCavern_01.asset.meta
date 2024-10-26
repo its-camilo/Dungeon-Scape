@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 439fee710a44447c7b48f39b21e8e812
+timeCreated: 1519846518
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/FarCavern/FarCavern_01.asset
+  uploadId: 248221

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 88a0b1578295c416093a032064fde7dd
+timeCreated: 1520559021
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/Environment/Environmental_SpritesV2_20.asset
+  uploadId: 248221

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f6b344c6ad9cd4fc5a38c451b86c3ac9
+timeCreated: 1519841321
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/Environment/Window.asset
+  uploadId: 248221

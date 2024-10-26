@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: af0f178cb78f54c2c808f0d5d2ad991d
+timeCreated: 1520622489
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/GreyCavern2/GreyCavern2_52.asset
+  uploadId: 248221

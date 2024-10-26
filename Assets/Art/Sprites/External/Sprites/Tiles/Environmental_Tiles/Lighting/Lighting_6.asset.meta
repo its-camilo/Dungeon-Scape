@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 308c8f0b9fb9f4467adac44704afc517
+timeCreated: 1520205815
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/Lighting/Lighting_6.asset
+  uploadId: 248221

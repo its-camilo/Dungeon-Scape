@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 7179457f0d05f457e9ccc7f5a8fdf27f
+timeCreated: 1519961585
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 119390
+  packageName: Dungeon Escape
+  packageVersion: 1.1
+  assetPath: Assets/Assets/Sprites/Tiles/Environmental_Tiles/BlackCavern2/BlackCavern2_09.asset
+  uploadId: 248221
