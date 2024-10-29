@@ -27,6 +27,7 @@ public class Spider : Enemy, IDamageable
         
         if (Health < 1)
         {
+            AudioManager.Instance.PlayEnemySound(2);
             isDead = true;
             anim.SetTrigger("Death");
             GameObject diamond = Instantiate(diamondPrefab, transform.position, Quaternion.identity) as GameObject;

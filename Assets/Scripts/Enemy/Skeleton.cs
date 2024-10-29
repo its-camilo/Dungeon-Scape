@@ -30,6 +30,7 @@ public class Skeleton : Enemy, IDamageable
         
         if (Health < 1)
         {
+            AudioManager.Instance.PlayEnemySound(1);
             isDead = true;
             anim.SetTrigger("Death");
             GameObject diamond = Instantiate(diamondPrefab, transform.position, Quaternion.identity) as GameObject;

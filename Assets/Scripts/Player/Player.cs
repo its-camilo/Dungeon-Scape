@@ -33,6 +33,7 @@ public class Player : MonoBehaviour, IDamageable
 
         if (CrossPlatformInputManager.GetButtonDown("A_Button") && isGrounded())
         {
+            AudioManager.Instance.PlayPlayerSound(4);
             playerAnim.Attack();
         }
         
@@ -51,6 +52,7 @@ public class Player : MonoBehaviour, IDamageable
 
         if ((Input.GetKeyDown(KeyCode.Space) || CrossPlatformInputManager.GetButtonDown("B_Button")) && isGrounded() is true)
         {
+            AudioManager.Instance.PlayPlayerSound(3);
             rb2d.linearVelocity = new Vector2(rb2d.linearVelocityX, jumpForce);
             StartCoroutine(ResetJumpRoutine());
             playerAnim.Jump(true);
@@ -114,17 +116,20 @@ public class Player : MonoBehaviour, IDamageable
             return;
         }
         
+        AudioManager.Instance.PlayPlayerSound(2);
         Health--;
         UIManager.Instance.UpdateLives(Health);
         
         if (Health < 1)
         {
+            AudioManager.Instance.PlayPlayerSound(0);
             playerAnim.Death();
         }
     }
     
     public void AddGems(int amount)
     {
+        AudioManager.Instance.PlayPlayerSound(1);
         diamonds += amount;
         UIManager.Instance.UpdateGemCount(diamonds);
     }
