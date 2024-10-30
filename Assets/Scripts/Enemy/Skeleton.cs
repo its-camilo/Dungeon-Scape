@@ -22,7 +22,7 @@ public class Skeleton : Enemy, IDamageable
             return;
         }
         
-        Health--;
+        Health--;//if have flamesword, duplicate
         anim.SetTrigger("Hit");
         
         isHit = true;

@@ -23,7 +23,7 @@ public class Spider : Enemy, IDamageable
             return;
         }
         
-        Health--;
+        Health--;//if have flamesword, duplicate
         
         if (Health < 1)
         {

@@ -58,6 +58,16 @@ public class Shop : MonoBehaviour
     {
         if (player.diamonds >= currentItemCost)
         {
+            if (currentItem == 0)
+            {
+                GameManager.Instance.HasFlameSword = true;
+            }
+            
+            else if (currentItem == 1)
+            {
+                GameManager.Instance.HasBootsOfFlight = true;
+            }
+            
             if (currentItem == 2)
             {
                 GameManager.Instance.HasKeyToCastle = true;

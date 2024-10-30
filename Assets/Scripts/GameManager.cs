@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     }
     
     public bool HasKeyToCastle { get; set; }
+    public bool HasFlameSword { get; set; }
+    public bool HasBootsOfFlight { get; set; }
     
     private void Awake()
     {

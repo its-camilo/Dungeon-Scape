@@ -22,7 +22,7 @@ public class MossGiant : Enemy, IDamageable
             return;
         }
         
-        Health--;
+        Health--;//if have flamesword, duplicate
         anim.SetTrigger("Hit");
         
         isHit = true;

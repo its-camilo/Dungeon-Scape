@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Level/Scenes/Game.unity
     guid: 8d609537b2ff94518b2aef8752cf8dc3
   - enabled: 0
-    path: Assets/Samples/Advertisement Legacy/4.12.0/UnityAds Example App/Scenes/UnityAdsExample.unity
+    path: Assets/UnityAds Example App/Scenes/UnityAdsExample.unity
     guid: 0b05e71623db14446af6380781088410
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 3590b91b4603b465dbb4216d601bff33, type: 3}
