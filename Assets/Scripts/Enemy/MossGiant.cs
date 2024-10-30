@@ -35,7 +35,6 @@ public class MossGiant : Enemy, IDamageable
         }
         
         anim.SetTrigger("Hit");
-        
         isHit = true;
         anim.SetBool("InCombat", true);
         

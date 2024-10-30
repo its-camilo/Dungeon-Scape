@@ -6,11 +6,11 @@ public class AcidEffect : MonoBehaviour
 {
     private void Start()
     {
-        Destroy(this.gameObject, 5f);
+        Destroy(this.gameObject, 2.5f);
     }
     private void Update()
     {
-        float moveDistance = Time.deltaTime * 3;
+        float moveDistance = Time.deltaTime * 2.5f;
         transform.Translate(Vector3.right * moveDistance);
     }
     

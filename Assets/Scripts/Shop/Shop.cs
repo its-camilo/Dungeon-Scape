@@ -39,17 +39,17 @@ public class Shop : MonoBehaviour
             case 0: 
                 UIManager.Instance.UpdateShopSelection(54);
                 currentItem = 0;
-                currentItemCost = 200;
+                currentItemCost = 12;
                 break;
             case 1:
                 UIManager.Instance.UpdateShopSelection(-53);
                 currentItem = 1;
-                currentItemCost = 400;
+                currentItemCost = 15;
                 break;
             case 2:
                 UIManager.Instance.UpdateShopSelection(-162);
                 currentItem = 2;
-                currentItemCost = 100;
+                currentItemCost = 18;
                 break;
         }
     }

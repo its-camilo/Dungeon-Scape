@@ -35,7 +35,6 @@ public class Skeleton : Enemy, IDamageable
         }
         
         anim.SetTrigger("Hit");
-        
         isHit = true;
         anim.SetBool("InCombat", true);
         
