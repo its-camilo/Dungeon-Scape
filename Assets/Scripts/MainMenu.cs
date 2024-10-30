@@ -5,6 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private static MainMenu instance;
+
+    public static MainMenu Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                Debug.LogError("MainMenu is null");
+            }
+            return instance;
+        }
+    }
+
+    private void Awake()
+    {
+        instance = this;
+    }
+    
     public void StartButton()
     {
         StartCoroutine(WaitForSoundAndLoadScene(1));

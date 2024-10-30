@@ -1,13 +1,15 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour, IDamageable
 {
     public int diamonds;
     
     private Rigidbody2D rb2d;
-    private float jumpForce = 6.5f; //if have bootsflight, duplicate
+    private float jumpForce = 6.5f; 
     [SerializeField] private LayerMask groundLayer;
     private bool resetJump = false;
     private float speed = 2.5f;
@@ -29,6 +31,10 @@ public class Player : MonoBehaviour, IDamageable
 
     void Update()
     {
+        if (GameManager.Instance.HasBootsOfFlight)
+        {
+            jumpForce = 10f;
+        }
         Movement();
 
         if (CrossPlatformInputManager.GetButtonDown("A_Button") && isGrounded())
@@ -122,7 +128,7 @@ public class Player : MonoBehaviour, IDamageable
         
         if (Health < 1)
         {
-            AudioManager.Instance.PlayPlayerSound(0);
+            StartCoroutine(WaitForSoundAndReload());
             playerAnim.Death();
         }
     }
@@ -132,5 +138,29 @@ public class Player : MonoBehaviour, IDamageable
         AudioManager.Instance.PlayPlayerSound(1);
         diamonds += amount;
         UIManager.Instance.UpdateGemCount(diamonds);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Deeps"))
+        {
+            StartCoroutine(WaitForSoundAndReload());
+            playerAnim.Death();
+        }
+        
+        if (other.gameObject.tag == "WinZone")
+        {
+            if (GameManager.Instance.HasKeyToCastle)
+            {
+                GameManager.Instance.Win();
+            }
+        }
+    }
+
+    private IEnumerator WaitForSoundAndReload()
+    {
+        AudioManager.Instance.PlayPlayerSound(0);
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

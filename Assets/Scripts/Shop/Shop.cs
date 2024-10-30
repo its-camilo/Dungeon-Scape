@@ -73,7 +73,9 @@ public class Shop : MonoBehaviour
                 GameManager.Instance.HasKeyToCastle = true;
             }
             
+            AudioManager.Instance.PlayExtrasSound(0);
             player.diamonds -= currentItemCost;
+            UIManager.Instance.UpdateGemCount(player.diamonds);
             shopPanel.SetActive(false);
         }
         

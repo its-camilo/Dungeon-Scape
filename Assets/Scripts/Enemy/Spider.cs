@@ -23,7 +23,17 @@ public class Spider : Enemy, IDamageable
             return;
         }
         
-        Health--;//if have flamesword, duplicate
+        //Health--;
+        
+        if (!GameManager.Instance.HasFlameSword)
+        {
+            Health--;
+        }
+        
+        if (GameManager.Instance.HasFlameSword)
+        {
+            Health-= 2;
+        }
         
         if (Health < 1)
         {

@@ -30,6 +30,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip menuSelection;
     public AudioClip[] playerSounds;
     public AudioClip[] enemySounds;
+    public AudioClip[] extrasSounds;
 
     public void PlaySoundtrack()
     {
@@ -58,6 +59,18 @@ public class AudioManager : MonoBehaviour
         if (index >= 0 && index < enemySounds.Length)
         {
             AudioSource.PlayClipAtPoint(enemySounds[index], Camera.main.transform.position);
+        }
+        else
+        {
+            Debug.LogError("Invalid sound index");
+        }
+    }
+    
+    public void PlayExtrasSound(int index)
+    {
+        if (index >= 0 && index < extrasSounds.Length)
+        {
+            AudioSource.PlayClipAtPoint(extrasSounds[index], Camera.main.transform.position);
         }
         else
         {
