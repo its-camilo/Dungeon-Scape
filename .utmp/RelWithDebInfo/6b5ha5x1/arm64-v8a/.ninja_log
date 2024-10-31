@@ -1,12 +1,23 @@
 # ninja log v5
-84	556	7506517537695673	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	dcbc3fd729625d47
-580	1138	7506517543453294	C:/Users/camil/OneDrive/Documentos/GitHub/Dungeon Scape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b5ha5x1/obj/arm64-v8a/libswappywrapper.so	3906e7169caa1b60
-37	1349	7506517545490140	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	70d7b984aeddb3b
-19	1383	7506517545999554	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3e3f2226cdd25a39
-47	1431	7506517546478103	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a8188bce7ef97c1f
-72	1438	7506517546549032	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	92dd2fab8fa2006e
-61	1509	7506517547264585	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e9d2cb6d16192230
-1	1571	7506517547876799	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	17277a741137f4e8
-31	1789	7506517550085764	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	8b4706d4ced8a645
-6	1993	7506517552101616	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d7dacadea2a57c1e
-1993	2087	7506517553033244	C:/Users/camil/OneDrive/Documentos/GitHub/Dungeon Scape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b5ha5x1/obj/arm64-v8a/libgame.so	11e4058d8fa22f78
+190	5352	7521104089967876	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d7dacadea2a57c1e
+640	3060	7521104067074465	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	dcbc3fd729625d47
+3061	3648	7521104072914082	C:/Users/camil/OneDrive/Documentos/GitHub/Dungeon Scape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b5ha5x1/obj/arm64-v8a/libswappywrapper.so	3906e7169caa1b60
+251	5166	7521104088134207	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	8b4706d4ced8a645
+382	4706	7521104083449648	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	70d7b984aeddb3b
+196	4856	7521104084986950	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a8188bce7ef97c1f
+201	4710	7521104083542648	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3e3f2226cdd25a39
+635	4852	7521104084951642	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e9d2cb6d16192230
+222	5000	7521104086475466	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	17277a741137f4e8
+374	4815	7521104084356218	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	92dd2fab8fa2006e
+5352	5802	7521104094393129	C:/Users/camil/OneDrive/Documentos/GitHub/Dungeon Scape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b5ha5x1/obj/arm64-v8a/libgame.so	11e4058d8fa22f78
+51	436	7521131691591635	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	dcbc3fd729625d47
+437	698	7521131694203230	C:/Users/camil/OneDrive/Documentos/GitHub/Dungeon Scape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b5ha5x1/obj/arm64-v8a/libswappywrapper.so	3906e7169caa1b60
+45	1675	7521131703997741	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	70d7b984aeddb3b
+12	1723	7521131704466801	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	3e3f2226cdd25a39
+42	1726	7521131704466801	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	92dd2fab8fa2006e
+15	1778	7521131704977901	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a8188bce7ef97c1f
+48	1796	7521131705170840	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	e9d2cb6d16192230
+19	1839	7521131705612101	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	17277a741137f4e8
+39	1958	7521131706822307	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	8b4706d4ced8a645
+3	2058	7521131707782994	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	d7dacadea2a57c1e
+2059	2130	7521131708508870	C:/Users/camil/OneDrive/Documentos/GitHub/Dungeon Scape/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/6b5ha5x1/obj/arm64-v8a/libgame.so	11e4058d8fa22f78

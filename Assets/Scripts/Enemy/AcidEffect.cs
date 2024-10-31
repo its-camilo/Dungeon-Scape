@@ -10,7 +10,7 @@ public class AcidEffect : MonoBehaviour
     }
     private void Update()
     {
-        float moveDistance = Time.deltaTime * 2.5f;
+        float moveDistance = Time.deltaTime * 1.5f;
         transform.Translate(Vector3.right * moveDistance);
     }
     
