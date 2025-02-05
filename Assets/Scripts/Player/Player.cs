@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
+//using UnityStandardAssets.CrossPlatformInput;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour, IDamageable
@@ -37,26 +37,27 @@ public class Player : MonoBehaviour, IDamageable
         }
         Movement();
 
-        if (CrossPlatformInputManager.GetButtonDown("A_Button") && isGrounded())
+        /*if (CrossPlatformInputManager.GetButtonDown("A_Button") && isGrounded())
+        {
+            AudioManager.Instance.PlayPlayerSound(4);
+            playerAnim.Attack();
+        }*/
+        
+        if (Input.GetMouseButtonDown(0) && isGrounded())
         {
             AudioManager.Instance.PlayPlayerSound(4);
             playerAnim.Attack();
         }
-        
-        /*if Input.GetMouseButtonDown(0) && isGrounded())
-        {
-            playerAnim.Attack();
-        }*/
     }
 
     void Movement()
     {
-        float move = CrossPlatformInputManager.GetAxis("Horizontal"); 
-        //float move = Input.GetAxisRaw("Horizontal");
+        //float move = CrossPlatformInputManager.GetAxis("Horizontal"); 
+        float move = Input.GetAxisRaw("Horizontal");
         grounded = isGrounded();
         Flip(move);
 
-        if ((Input.GetKeyDown(KeyCode.Space) || CrossPlatformInputManager.GetButtonDown("B_Button")) && isGrounded() is true)
+        if ((Input.GetKeyDown(KeyCode.Space) /*|| CrossPlatformInputManager.GetButtonDown("B_Button")*/) && isGrounded() is true)
         {
             AudioManager.Instance.PlayPlayerSound(3);
             rb2d.linearVelocity = new Vector2(rb2d.linearVelocityX, jumpForce);
